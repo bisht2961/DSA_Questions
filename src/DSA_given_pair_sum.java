@@ -12,7 +12,7 @@ public class DSA_given_pair_sum {
         for (int i = 0; i < A.length; i++){
 
             if (map.containsKey(sum - A[i])){
-                System.out.printf("Pair found (%d, %d)", A[map.get(sum - A[i])], A[i]);
+                out.printf("Pair found (%d, %d)", A[map.get(sum - A[i])], A[i]);
                 return;
             }
             map.put(A[i], i);
