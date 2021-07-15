@@ -22,12 +22,12 @@ public class DSA_given_pair_sum {
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
         out = new PrintWriter(System.out);
-        int n = sc.nextInt();
+        int n = sc.nextInt(),sum = sc.nextInt();
         int[]ar = new int[n];
         for(int i=0;i<n;i++){
             ar[i] = sc.nextInt();
         }
-
+        findPair(ar,sum);
         out.flush();
         out.close();
     }
